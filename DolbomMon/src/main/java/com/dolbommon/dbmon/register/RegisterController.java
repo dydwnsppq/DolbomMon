@@ -2,7 +2,6 @@ package com.dolbommon.dbmon.register;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 public class RegisterController {
@@ -12,36 +11,31 @@ public class RegisterController {
 	public String join() {
 		return "register/join";
 	}
+
 	
-	// 학부모 회원가입 시작
-	@RequestMapping("/parent/join/start")
-	public String joinParentStart() {
-		return "register/parent/start";
-	}
-	
-	// 돌봄몬 회원가입 시작
-	@RequestMapping("/dbm/join/start")
-	public String joinDbmStart() {
-		return "register/dbm/start";
-	}
-	
-	// 회원가입 폼으로
-	@RequestMapping("/regForm")
-	public String regForm() {
+		//////////////////////////// 학부모 회원가입 시작 /////////////////////////////////
+		@RequestMapping("/parentJoinStart")
+		public String joinParentStart() {
+			return "register/parent/regForm";
+		}
 		
-		return "register/regForm";
-	}
-	
-	// 우편코드 선택창
-	@RequestMapping("/zipcodeSearch")
-	public String zipcodeSearch() {
+		// 원하는 돌봄선택, 선생님 나이선택
+		@RequestMapping("/parent/activityAndAge")
+		public String selectActivityAndAge() {
+			return "register/parent/activityAndAge";
+		}
 		
-		return "register/zipcodeSearch";
-	}
-	
-	// 회원가입하기
-	@RequestMapping(value="/regFormOk", method=RequestMethod.POST)
-	public String regFormOk() {
-		return "home";
-	}
+		
+		////////////////////////////// 돌봄몬 회원가입 시작 //////////////////////////////////
+		@RequestMapping("/dbmJoinStart")
+		public String joinDbmStart() {
+			return "register/dbm/start";
+		}
+		
+		// 우편코드 선택창
+		@RequestMapping("/zipcodeSearch")
+		public String zipcodeSearch() {
+			
+			return "register/zipcodeSearch";
+		}
 }
