@@ -10,7 +10,7 @@
 	<div>
 		
 	</div>
-	<h1><a href="<%=request.getContextPath()%>/parentJoinStart">부모님 회원가입</a></h1><br/>
-	<h1><a href="<%=request.getContextPath()%>/dbmJoinStart">돌봄몬 회원가입</a></h1>
+	<h1><a href="<%=request.getContextPath()%>/parent/join/start">부모님 회원가입</a></h1><br/>
+	<h1><a href="<%=request.getContextPath()%>/dbm/join/start">돌봄몬 회원가입</a></h1>
 </body>
 </html>
