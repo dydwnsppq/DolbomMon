@@ -95,18 +95,17 @@
 		<div id="header">정기적으로</div>	
 		<div id="startDateDiv"><span>돌봄시작일</span><input type="date" name="start_date"/></div>
 		<div id="selectDayDiv">
-			<input type="checkbox" id="y1" name="yoil" value="mon" />
-			<input type="checkbox" id="y2" name="yoil" value="tue" />
-			<input type="checkbox" id="y3" name="yoil" value="wed" />
-			<input type="checkbox" id="y4" name="yoil" value="thu" />
-			<input type="checkbox" id="y5" name="yoil" value="fri" />
-			<input type="checkbox" id="y6" name="yoil" value="sat" />
-			<input type="checkbox" id="y7" name="yoil" value="sun" />
+			<input type="checkbox" id="y1" name="yoil" value="월" />
+			<input type="checkbox" id="y2" name="yoil" value="화" />
+			<input type="checkbox" id="y3" name="yoil" value="수" />
+			<input type="checkbox" id="y4" name="yoil" value="목" />
+			<input type="checkbox" id="y5" name="yoil" value="금" />
+			<input type="checkbox" id="y6" name="yoil" value="토" />
+			<input type="checkbox" id="y7" name="yoil" value="일" />
 			<ul>
 				<li><label for="y1">월</label></li>
 				<li><label for="y2">화</label></li>
-				<li><label for="y3">수</label></li>
-				<li><label for="y4">목</label></li>
+				<li><label for="y3">수</label></li>				<li><label for="y4">목</label></li>
 				<li><label for="y5">금</label></li>
 				<li><label for="y6">토</label></li>
 				<li><label for="y7">일</label></li>
