@@ -17,7 +17,7 @@
  	#plusBtn{position:relative; right:45px; top:40px; width:40px;height:40px;}
  	p{display:inline-block; width:40%; overflow:hidden; height:auto; font-size:15px;}
  	.container>input{width:70%; height:40px; border:1px solid #CCC; border-radius:10px;}
- 	input[type=submit]{margin:20px 0; background-color:orange; color:#EFEFEF}
+ 	input[type=submit]:nth-of-type(1){margin:20px 0; background-color:orange; color:#EFEFEF}
  	input[type=file]{display:none;}
  	#profileImg{width:120px;height:120px;}
 </style>
